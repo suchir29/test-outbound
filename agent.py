@@ -173,7 +173,7 @@ async def entrypoint(ctx: JobContext):
 
         participant = await ctx.wait_for_participant(identity=participant_identity)
         agent.set_participant(participant)
-        await asyncio.sleep(1) 
+        #await asyncio.sleep(1) 
         #await session.speak(text="Good day, am I speaking with Mr Ranbeer?")
 
         
