@@ -113,7 +113,7 @@ async def entrypoint(ctx: JobContext):
     participant_identity = phone_number = dial_info["phone_number"]
 
     # Load prompt
-    prompt_path = os.path.join(os.path.dirname(__file__), "promptPaulprompt_dutch_jul12025.txt")
+    prompt_path = os.path.join(os.path.dirname(__file__), "prompt_dutch_jul12025.txt")
     if os.path.exists(prompt_path):
         with open(prompt_path, "r", encoding="utf-8") as f:
             prompt_text = f.read()
